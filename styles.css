@@ -1,0 +1,13 @@
+.body {
+    background-color: #222c35;
+    color: #b5b8bb;
+}
+.body .logo {
+
+}
+nav ul li {
+    list-style-type: none;
+}
+nav ul li span {
+    color : #53877f;
+}
