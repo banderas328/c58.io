@@ -62,8 +62,8 @@ section div p {
     clear: both;
     padding-top: 50px;
     padding-bottom: 30px;
-    border: 3px outset #2b5658;
-    border-radius: 15px;
+    /*border: 3px outset #2b5658;*/
+    /*border-radius: 15px;*/
 }
 .h1-services {
     padding-bottom: 45px;
@@ -71,6 +71,9 @@ section div p {
 .products {
 margin-top: 50px;
 
+}
+.products h1{
+   text-align: center;
 }
 .products .row div p{
     max-width: 340px;
@@ -93,6 +96,7 @@ margin-top: 50px;
 }
 footer {
     text-align: center;
+    padding-top: 40px;
 }
 footer > * {
     margin-top: 25px;
