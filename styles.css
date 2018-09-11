@@ -1,6 +1,7 @@
 .body {
     background-color: #222c35;
     color: #b5b8bb;
+    font-family: FreeMono, monospace;
 }
 .body .logo {
     margin: 15% 15% 15% 31%;
@@ -12,7 +13,7 @@
 }
 .body header nav {
     margin: auto;
-    width: 350px;
+    width: 410px;
     font-weight: 700;
     font-size: 30px;
     position: relative;
