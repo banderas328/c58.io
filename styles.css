@@ -21,6 +21,7 @@
 }
 nav ul li {
     list-style-type: none;
+    cursor: pointer;
 }
 nav ul li span {
     color : #53877f;
