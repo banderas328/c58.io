@@ -66,6 +66,9 @@ section div p {
     /*border: 3px outset #2b5658;*/
     /*border-radius: 15px;*/
 }
+div.services {
+    padding-top: 20px;
+}
 .h1-services {
     padding-bottom: 45px;
 }
