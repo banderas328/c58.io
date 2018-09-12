@@ -135,23 +135,16 @@
     <p>copyrights</p>
 
 </footer>
-
-
 <script type="text/javascript">
     jQuery(function () {
         function goToByScroll(id) {
-            // Remove "link" from the ID
             id = id.replace("link", "");
-            // Scroll
             $('html,body').animate({
                 scrollTop: $("#" + id).offset().top
             }, 'slow');
         }
 
         $("nav > ul > li ").click(function(e) {
-            // Prevent a page reload when a link is pressed
-            e.preventDefault();
-            // Call the scroll function
             goToByScroll(this.getAttribute('linkto'));
         });
     });
