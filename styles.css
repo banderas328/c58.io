@@ -119,9 +119,14 @@ footer h2 a:hover{
     text-decoration: none;
 }
 .logo h2 {
+    cursor: pointer;
     display: inline-block;
     position: relative;
     bottom: 23px;
     left: 13px;
     font-weight: 600;
+}
+.logo h2:hover{
+    color: #43d3aa;
+    text-decoration: none;
 }
