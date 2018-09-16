@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./libs/jqueryxtr/jquery.xtr.min.js"></script>
   <link href="./styles.css" rel="stylesheet">
     <meta http-equiv="Cache-Control" content="max-age=10600, must-revalidate" />
 </head>
@@ -17,13 +18,15 @@
         <div class="col-12  col-sm-12 col-md-12 col-lg-6  " class="header-left">
             <div class="logo">
                 <img src="images/logo.png">
+                <h2 class="lang" lang="ru">RUS</h2>
+                <h2 class="lang" lang="en">EN</h2>
             </div>
             <nav>
                 <ul>
-                    <li linkto="services"><span>/</span> Smartcontracts</li>
-                    <li linkto="services"><span>/</span> Cryptocurrence</li>
-                    <li linkto="about"><span>/</span> Audit</li>
-                    <li linkto="about"><span>/</span> Penetration testing</li>
+                    <li linkto="services"><span class="line">/</span> <span lang_key="menu1">Smartcontracts</span></li>
+                    <li linkto="services"><span class="line">/</span > <span lang_key="menu2">Cryptocurrence</span></li>
+                    <li linkto="about"><span class="line">/</span > <span lang_key="menu3">Audit</span></li>
+                    <li linkto="about"><span class="line">/</span> <span lang_key="menu4">Penetration testing</span></li>
                 </ul>
             </nav>
         </div>
@@ -37,8 +40,8 @@
 <section class="container">
     <div class="row">
         <div class="col-md-12">
-    <h1>/// Mission</h1>
-    <p class="mission-p">
+    <h1 lang_key="mission">/// Mission</h1>
+    <p class="mission-p" lang_key="mission-content">
         What is Lorem Ipsum?
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text
@@ -138,8 +141,20 @@
     <p>copyrights</p>
 
 </footer>
+<script src="libs/jqueryxtr/translations.js"></script>
 <script type="text/javascript">
     jQuery(function () {
+        jQuery(".lang").click(
+            function () {
+                $(".lang").attr('active','false');
+                $(this).attr('active','true');
+                var lang = $(".lang[active=true]").attr('lang');
+                $.each( $('[lang_key]'), function( i, val ) {
+                    key = $(val).attr('lang_key');
+                    $(this).html(data[key][lang]);
+                });
+            }
+        );
         function goToByScroll(id) {
             id = id.replace("link", "");
             $('html,body').animate({
@@ -151,6 +166,10 @@
             goToByScroll(this.getAttribute('linkto'));
         });
     });
+
+
+
+
 </script>
 </body>
 </html>

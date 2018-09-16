@@ -26,7 +26,7 @@ nav ul li {
 nav ul li:hover {
     color: #43d3aa;
 }
-nav ul li span {
+nav ul li span.line {
     color : #53877f;
 }
 .header-image {
@@ -117,4 +117,11 @@ footer h2 a{
 footer h2 a:hover{
     color: #43d3aa;
     text-decoration: none;
+}
+.logo h2 {
+    display: inline-block;
+    position: relative;
+    bottom: 23px;
+    left: 13px;
+    font-weight: 600;
 }
