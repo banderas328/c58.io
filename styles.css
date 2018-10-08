@@ -39,7 +39,7 @@ nav ul li {
     cursor: pointer;
 }
 nav ul li:hover {
-    color: #43d3aa;
+    color: #2bb673;
 }
 nav ul li span.line {
     color : #53877f;
@@ -130,7 +130,7 @@ footer h2 a{
     color: white;
 }
 footer h2 a:hover{
-    color: #43d3aa;
+    color: #2bb673;
     text-decoration: none;
 }
 .logo h2 {
@@ -142,6 +142,6 @@ footer h2 a:hover{
     vertical-align: top;
 }
 .logo h2:hover{
-    color: #43d3aa;
+    color: #2bb673;
     text-decoration: none;
 }
